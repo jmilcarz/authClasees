@@ -1,7 +1,7 @@
 <?php
 class DB {
         private static function connect() {
-                $pdo = new PDO('mysql:host=127.0.0.1;dbname=SocialNetwork;charset=utf8', 'root', '');
+                $pdo = new PDO('mysql:host=127.0.0.1;dbname=DBNAME;charset=utf8', 'USERNAME', 'PASSWORD');
                 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 return $pdo;
         }
